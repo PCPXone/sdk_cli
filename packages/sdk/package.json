@@ -13,7 +13,7 @@
   ],
   "author": "PCPX1 <security@pcpx.one>",
   "license": "MIT",
-  "homepage": "https://pcpx.one/developers",
+  "homepage": "https://pcpx.one/sdk",
   "bugs": {
     "email": "security@pcpx.one",
     "url": "https://pcpx.one/security"
@@ -47,5 +47,10 @@
     "build": "tsc -p tsconfig.build.json && node scripts/build.mjs",
     "test": "node --import tsx tests/sdk.test.mts"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PCPXone/zeroknowledge.git",
+    "directory": "packages/sdk"
+  }
 }

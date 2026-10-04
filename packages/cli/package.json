@@ -12,7 +12,7 @@
   ],
   "author": "PCPX1 <security@pcpx.one>",
   "license": "MIT",
-  "homepage": "https://pcpx.one/developers",
+  "homepage": "https://pcpx.one/cli",
   "bugs": {
     "email": "security@pcpx.one",
     "url": "https://pcpx.one/security"
@@ -38,5 +38,10 @@
     "build": "esbuild src/pcpx.mts --bundle --platform=node --format=esm --target=node20 --outfile=dist/pcpx.mjs && node -e \"const fs=require('fs');const p='dist/pcpx.mjs';let s=fs.readFileSync(p,'utf8');s=s.replace(/^#![^\\n]*\\n?/,'');fs.writeFileSync(p,'#!/usr/bin/env node\\n'+s);fs.chmodSync(p,0o755);\" && echo OK",
     "test": "node --import tsx ../../tests/cli.test.mts"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PCPXone/zeroknowledge.git",
+    "directory": "packages/cli"
+  }
 }

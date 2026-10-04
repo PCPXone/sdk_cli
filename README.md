@@ -37,6 +37,9 @@ others don't have to guess.
 See [pcpx.one/sdk](https://pcpx.one/sdk), [pcpx.one/cli](https://pcpx.one/cli)
 and [pcpx.one/warum](https://pcpx.one/warum).
 
-## License
+## License & scope
 
-MIT — see [LICENSE](LICENSE).
+MIT — see [LICENSE](LICENSE). The MIT license covers **only the packages in this
+repository** (`@pcpx/sdk`, `@pcpx/cli`) and the included spec and vectors. The
+pcpx.one website and server are **not** open source and are not part of this
+repository.
