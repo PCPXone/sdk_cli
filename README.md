@@ -1,5 +1,10 @@
 # PCPX packages
 
+[![@pcpx/sdk on npm](https://img.shields.io/npm/v/%40pcpx%2Fsdk?label=%40pcpx%2Fsdk&color=06b6d4)](https://www.npmjs.com/package/@pcpx/sdk)
+[![@pcpx/cli on npm](https://img.shields.io/npm/v/%40pcpx%2Fcli?label=%40pcpx%2Fcli&color=06b6d4)](https://www.npmjs.com/package/@pcpx/cli)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
+[![Node 20+](https://img.shields.io/badge/node-%3E%3D20-339933)](https://nodejs.org)
+
 The zero-knowledge encryption primitives behind [pcpx.one](https://pcpx.one) —
 as versioned, auditable npm packages instead of live-served web JavaScript.
 
