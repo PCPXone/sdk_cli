@@ -1,0 +1,67 @@
+{
+  "note": "Eingefroren mit dem Frontend-Code VOR der SDK-Extraktion. Enthaelt ausschliesslich Testdaten und die zugehoerigen Test-Passphrasen — keine echten Secrets.",
+  "generatedFrom": "src/crypto.ts, src/payload.ts, src/crypto/pcpx-v2.ts",
+  "format": "PCPX1-ENC-v2",
+  "fixtures": [
+    {
+      "name": "text-standard",
+      "description": "Textnachricht, Standardmodus (Passphrase = linkKey aus dem Fragment)",
+      "passphrase": "dGVzdC1saW5rLWtleS1zdGFuZGFyZA",
+      "saltB64": "c2FsdC1mb3ItcGNweC1zZGstdGVzdHM",
+      "iterations": 600000,
+      "expectedKind": "text",
+      "expectedName": "nachricht.txt",
+      "expectedDeclaredType": "text/plain",
+      "expectedContentB64": "SGFsbG8gYXVzIGRlbSBBbHRiZXN0YW5kLiBVbWxhdXRlOiDDpMO2w7zDnyDigJQgRW1vamk6IPCflJI",
+      "containerB64": "UENQWDEtRU5DLXYyCgAAAJh7InZlcnNpb24iOjIsImFsZyI6IkFFUy1HQ00iLCJrZGYiOiJQQktERjItU0hBMjU2IiwiaXRlcmF0aW9ucyI6NjAwMDAwLCJjaHVua1NpemUiOjUyNDI4ODAsInBheWxvYWRTaXplIjoxNjksInRvdGFsQ2h1bmtzIjoxLCJhYWQiOiJQQ1BYMS1DSFVOSy1BQUQtdjEifQAAALktDNfBSdluAhBWNlnXxDFL0I-KYrhMBf13giqa-ZdE5YktsBxuHDQdsYJ2EMkk74ofSAvphETuG9Uu9FEGog-KRfSAldNfdRshcakXQkppUCCDc9TZWd6uq6ONO1jnE0oVU4GyVU0TLGhBZhhuN2ZRzNA07VgZ3KpB-t2_cqipfNteQn53vm9y7YvqnMmx4NdUxwZ7eUHptUPwjerV2a5geyl2sCnmpr0UItgUZGFXMifnvWZJa1-wtJanR_1rUERImDIrng"
+    },
+    {
+      "name": "file-standard",
+      "description": "Bindaerdatei, Standardmodus",
+      "passphrase": "dGVzdC1saW5rLWtleS1maWxl",
+      "saltB64": "c2FsdC1mb3ItcGNweC1zZGstdGVzdHM",
+      "iterations": 600000,
+      "expectedKind": "file",
+      "expectedName": "bericht.pdf",
+      "expectedDeclaredType": "application/pdf",
+      "expectedContentB64": "JVBERi0xLjcA_xBC",
+      "containerB64": "UENQWDEtRU5DLXYyCgAAAJh7InZlcnNpb24iOjIsImFsZyI6IkFFUy1HQ00iLCJrZGYiOiJQQktERjItU0hBMjU2IiwiaXRlcmF0aW9ucyI6NjAwMDAwLCJjaHVua1NpemUiOjUyNDI4ODAsInBheWxvYWRTaXplIjoxMjUsInRvdGFsQ2h1bmtzIjoxLCJhYWQiOiJQQ1BYMS1DSFVOSy1BQUQtdjEifQAAAI2-chJFHJytF6CuKIaCVjwu44V4kbu1P51NWrGEkazWm4IPsUVmtJz8YFuezZCaJLgCT-keOl5vPseI45piY3aAYX_poKF-YevZWvjRk0gZdDUPHiTJK4erp3EwQkSPy0eH9SvITL99jMvCW4nb5wxZIhJF5CaYKBvzbj--i-s-enOILXm5NgEflY8HOagd3TlsBqHtbjrMFlE"
+    },
+    {
+      "name": "text-password",
+      "description": "Passwortgeschuetzt — Fragment traegt \"pwd\", die Passphrase kennt nur der Nutzer",
+      "passphrase": "korrektes-pferd-batterie-klammer",
+      "saltB64": "c2FsdC1mb3ItcGNweC1zZGstdGVzdHM",
+      "iterations": 600000,
+      "expectedKind": "text",
+      "expectedName": "geheim.txt",
+      "expectedDeclaredType": "text/plain",
+      "expectedContentB64": "UGFzc3dvcnRnZXNjaHVldHp0ZXIgSW5oYWx0",
+      "containerB64": "UENQWDEtRU5DLXYyCgAAAJh7InZlcnNpb24iOjIsImFsZyI6IkFFUy1HQ00iLCJrZGYiOiJQQktERjItU0hBMjU2IiwiaXRlcmF0aW9ucyI6NjAwMDAwLCJjaHVua1NpemUiOjUyNDI4ODAsInBheWxvYWRTaXplIjoxMzQsInRvdGFsQ2h1bmtzIjoxLCJhYWQiOiJQQ1BYMS1DSFVOSy1BQUQtdjEifQAAAJbCWwHA_6wZGC0PiHdhXB8R7p9T3SdZHftobr8lXpVco48xaQbWXdlBqPXJtBtVtBQyIdZGgJsQoRlM-mAr1PHBft9See7a2RvYSZfywpCn6hilJZTeTDbK-C3Fd5XxL_F5W4K5H6H5kxoVNBiImS8CXOXUxWAwcQ-86kkq8ViHqCLz2axrOpifM-jy5xuPdiBRB8rqQ3snOV0vzIxHYQ_ZDSI"
+    },
+    {
+      "name": "text-trust-split",
+      "description": "Trust-Key-Modus: Passphrase aus linkSecret + accessSecret zusammengesetzt",
+      "passphrase": "bGlua1NlY3JldC0xNmJ5dGVhY2Nlc3NTZWNyZXQtMTZieQ",
+      "saltB64": "c2FsdC1mb3ItcGNweC1zZGstdGVzdHM",
+      "iterations": 600000,
+      "expectedKind": "text",
+      "expectedName": "freigabe.txt",
+      "expectedDeclaredType": "text/plain",
+      "expectedContentB64": "TnVyIG5hY2ggR2VyYWV0ZWZyZWlnYWJlIGxlc2Jhcg",
+      "containerB64": "UENQWDEtRU5DLXYyCgAAAJh7InZlcnNpb24iOjIsImFsZyI6IkFFUy1HQ00iLCJrZGYiOiJQQktERjItU0hBMjU2IiwiaXRlcmF0aW9ucyI6NjAwMDAwLCJjaHVua1NpemUiOjUyNDI4ODAsInBheWxvYWRTaXplIjoxNDAsInRvdGFsQ2h1bmtzIjoxLCJhYWQiOiJQQ1BYMS1DSFVOSy1BQUQtdjEifQAAAJwsmz0GDh-ZASq8ydhNdwgHmVcMbRhJtJRTKiambM3G5Vajpk1xzlV3YS6ncRBtvMiUtcLjLNvf8KmmUHHrp85dEpNwg5jkbFnlQq7AtSPkhpm6V69EGhKGBsamMtri6_bHK5V6s3y4JXprda5GoF7C120vY-Cobvq907oNdJqRZfy7KrCe_rrlJQTk3jZgvOICfWN3CcVm1ekdD9H2dE4dBvR2YXImlc0"
+    },
+    {
+      "name": "file-active-mime-degraded",
+      "description": "Deklariert text/html — muss beim Auspacken auf application/octet-stream degradiert werden",
+      "passphrase": "dGVzdC1saW5rLWtleS1taW1l",
+      "saltB64": "c2FsdC1mb3ItcGNweC1zZGstdGVzdHM",
+      "iterations": 600000,
+      "expectedKind": "file",
+      "expectedName": "seite.html",
+      "expectedDeclaredType": "text/html",
+      "expectedContentB64": "PHNjcmlwdD5hbGVydCgxKTwvc2NyaXB0Pg",
+      "containerB64": "UENQWDEtRU5DLXYyCgAAAJh7InZlcnNpb24iOjIsImFsZyI6IkFFUy1HQ00iLCJrZGYiOiJQQktERjItU0hBMjU2IiwiaXRlcmF0aW9ucyI6NjAwMDAwLCJjaHVua1NpemUiOjUyNDI4ODAsInBheWxvYWRTaXplIjoxMzEsInRvdGFsQ2h1bmtzIjoxLCJhYWQiOiJQQ1BYMS1DSFVOSy1BQUQtdjEifQAAAJO_EVLas4Iuxh10jbsjmzzK5hCKiZlpMZ2t5thXlx0NLzJe5CnB6FQ6YIXU8akpoJHSZg1x7MV6TcCtp9EQtXR0ThuEeT5ZQGc6MzjGxmde-04FBtbHa3OtikP6SPaidWbOQVYbDjLJH-sNYrS9UrLHlj2zTCpNve0CnZkK6jot9B6JEQUebk62Tsmn5c8gR12czUTXZ0Dc-QCY6fH3Gzs"
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+node_modules/
+dist/
+*.tgz
+packages/sdk/SPEC.md
+packages/sdk/vectors/
+.DS_Store

@@ -1,0 +1,121 @@
+{
+  "format": "PCPX1-ENC-v2",
+  "specification": "docs/PCPX1-ENC-v2.md",
+  "note": "Erzeugt von tools/spec/build-vectors.mjs ohne Beteiligung des SDK. Nicht von Hand bearbeiten.",
+  "chunkSize": 5242880,
+  "vectors": [
+    {
+      "name": "leerer Payload — ein Chunk mit Laenge 0",
+      "passphrase": "pcpx-test-vector-1",
+      "saltB64u": "AAECAwQFBgcICQoLDA0ODw",
+      "iterations": 600000,
+      "derivedKeyB64u": "MH5ugvkxRnbKoRsTpWoEGhAxcv4OmVEKF4xMF7VeOAg",
+      "payloadSize": 0,
+      "totalChunks": 1,
+      "ivsB64u": [
+        "ERERERERERERERER"
+      ],
+      "containerSize": 199,
+      "containerSha256B64u": "cM4qpz85cwEgaox0n-LInDPa56Jrb2una0obX7M7nMA",
+      "plaintextB64u": "",
+      "containerB64u": "UENQWDEtRU5DLXYyCgAAAJZ7InZlcnNpb24iOjIsImFsZyI6IkFFUy1HQ00iLCJrZGYiOiJQQktERjItU0hBMjU2IiwiaXRlcmF0aW9ucyI6NjAwMDAwLCJjaHVua1NpemUiOjUyNDI4ODAsInBheWxvYWRTaXplIjowLCJ0b3RhbENodW5rcyI6MSwiYWFkIjoiUENQWDEtQ0hVTkstQUFELXYxIn0AAAAQEREREREREREREREREH8UHILcKP6lVHuRlam_bA"
+    },
+    {
+      "name": "ein Byte",
+      "passphrase": "pcpx-test-vector-1",
+      "saltB64u": "AAECAwQFBgcICQoLDA0ODw",
+      "iterations": 600000,
+      "derivedKeyB64u": "MH5ugvkxRnbKoRsTpWoEGhAxcv4OmVEKF4xMF7VeOAg",
+      "payloadSize": 1,
+      "totalChunks": 1,
+      "ivsB64u": [
+        "IiIiIiIiIiIiIiIi"
+      ],
+      "containerSize": 200,
+      "containerSha256B64u": "upiktP4qI-vy1xhQip2Ge6-bjv5TV_90jmhmXGTjjmM",
+      "plaintextB64u": "QQ",
+      "containerB64u": "UENQWDEtRU5DLXYyCgAAAJZ7InZlcnNpb24iOjIsImFsZyI6IkFFUy1HQ00iLCJrZGYiOiJQQktERjItU0hBMjU2IiwiaXRlcmF0aW9ucyI6NjAwMDAwLCJjaHVua1NpemUiOjUyNDI4ODAsInBheWxvYWRTaXplIjoxLCJ0b3RhbENodW5rcyI6MSwiYWFkIjoiUENQWDEtQ0hVTkstQUFELXYxIn0AAAARIiIiIiIiIiIiIiIiZtd7QRafD43WI54HAyVva3c"
+    },
+    {
+      "name": "UTF-8-Text mit Umlauten und Emoji",
+      "passphrase": "pcpx-test-vector-1",
+      "saltB64u": "AAECAwQFBgcICQoLDA0ODw",
+      "iterations": 600000,
+      "derivedKeyB64u": "MH5ugvkxRnbKoRsTpWoEGhAxcv4OmVEKF4xMF7VeOAg",
+      "payloadSize": 25,
+      "totalChunks": 1,
+      "ivsB64u": [
+        "MzMzMzMzMzMzMzMz"
+      ],
+      "containerSize": 225,
+      "containerSha256B64u": "Ma6qH9lpypSuZqdggliWYSM6EhCju2Li2Z01_5k2BYw",
+      "plaintextB64u": "R3LDvMOfZSBhdXMgU2Nod2VkZW4g8J-UkA",
+      "containerB64u": "UENQWDEtRU5DLXYyCgAAAJd7InZlcnNpb24iOjIsImFsZyI6IkFFUy1HQ00iLCJrZGYiOiJQQktERjItU0hBMjU2IiwiaXRlcmF0aW9ucyI6NjAwMDAwLCJjaHVua1NpemUiOjUyNDI4ODAsInBheWxvYWRTaXplIjoyNSwidG90YWxDaHVua3MiOjEsImFhZCI6IlBDUFgxLUNIVU5LLUFBRC12MSJ9AAAAKTMzMzMzMzMzMzMzM933ED2JnV5QjkgDnazM1M3cexlH1u_Geoj3yBs-358cXX5zJk4bmWA3"
+    },
+    {
+      "name": "Passphrase mit Sonderzeichen",
+      "passphrase": "pß·🔑·4096",
+      "saltB64u": "AAECAwQFBgcICQoLDA0ODw",
+      "iterations": 600000,
+      "derivedKeyB64u": "5C6kKvemnUwF7YQzEmO7fprGx2tdsF8vQLFaByU7_8E",
+      "payloadSize": 1024,
+      "totalChunks": 1,
+      "ivsB64u": [
+        "RERERERERERERERE"
+      ],
+      "containerSize": 1226,
+      "containerSha256B64u": "qg1GQB6Z7V5lSmtcsQg6pNGTPfH-4w97GcAMy12PzAI",
+      "plaintextB64u": "ByZFZIOiweD_Hj1ce5q52PcWNVRzkrHQ7w4tTGuKqcjnBiVEY4KhwN_-HTxbepm41_YVNFNykbDP7g0sS2qJqMfmBSRDYoGgv979HDtaeZi31vUUM1JxkK_O7QwrSmmIp8blBCNCYYCfvt38GzpZeJe21fQTMlFwj67N7AsqSWiHpsXkAyJBYH-evdz7GjlYd5a11PMSMVBvjq3M6wopSGeGpcTjAiFAX36dvNv6GThXdpW00_IRME9ujazL6gkoR2aFpMPiASA_Xn2cu9r5GDdWdZSz0vEQL05tjKvK6QgnRmWEo8LhAB8-XXybutn4FzZVdJOy0fAPLk1si6rJ6AcmRWSDosHg_x49XHuaudj3FjVUc5Kx0O8OLUxriqnI5wYlRGOCocDf_h08W3qZuNf2FTRTcpGwz-4NLEtqiajH5gUkQ2KBoL_e_Rw7WnmYt9b1FDNScZCvzu0MK0ppiKfG5QQjQmGAn77d_Bs6WXiXttX0EzJRcI-uzewLKkloh6bF5AMiQWB_nr3c-xo5WHeWtdTzEjFQb46tzOsKKUhnhqXE4wIhQF9-nbzb-hk4V3aVtNPyETBPbo2sy-oJKEdmhaTD4gEgP159nLva-Rg3VnWUs9LxEC9ObYyryukIJ0ZlhKPC4QAfPl18m7rZ-Bc2VXSTstHwDy5NbIuqyegHJkVkg6LB4P8ePVx7mrnY9xY1VHOSsdDvDi1Ma4qpyOcGJURjgqHA3_4dPFt6mbjX9hU0U3KRsM_uDSxLaomox-YFJENigaC_3v0cO1p5mLfW9RQzUnGQr87tDCtKaYinxuUEI0JhgJ--3fwbOll4l7bV9BMyUXCPrs3sCypJaIemxeQDIkFgf5693PsaOVh3lrXU8xIxUG-OrczrCilIZ4alxOMCIUBffp282_oZOFd2lbTT8hEwT26NrMvqCShHZoWkw-IBID9efZy72vkYN1Z1lLPS8RAvTm2Mq8rpCCdGZYSjwuEAHz5dfJu62fgXNlV0k7LR8A8uTWyLqsnoByZFZIOiweD_Hj1ce5q52PcWNVRzkrHQ7w4tTGuKqcjnBiVEY4KhwN_-HTxbepm41_YVNFNykbDP7g0sS2qJqMfmBSRDYoGgv979HDtaeZi31vUUM1JxkK_O7QwrSmmIp8blBCNCYYCfvt38GzpZeJe21fQTMlFwj67N7AsqSWiHpsXkAyJBYH-evdz7GjlYd5a11PMSMVBvjq3M6wopSGeGpcTjAiFAX36dvNv6GThXdpW00_IRME9ujazL6gkoR2aFpMPiASA_Xn2cu9r5GDdWdZSz0vEQL05tjKvK6QgnRmWEo8LhAB8-XXybutn4FzZVdJOy0fAPLk1si6rJ6A",
+      "containerB64u": "UENQWDEtRU5DLXYyCgAAAJl7InZlcnNpb24iOjIsImFsZyI6IkFFUy1HQ00iLCJrZGYiOiJQQktERjItU0hBMjU2IiwiaXRlcmF0aW9ucyI6NjAwMDAwLCJjaHVua1NpemUiOjUyNDI4ODAsInBheWxvYWRTaXplIjoxMDI0LCJ0b3RhbENodW5rcyI6MSwiYWFkIjoiUENQWDEtQ0hVTkstQUFELXYxIn0AAAQQRERERERERERERERETxZ9VCQR2Z156z7M-6GhrdwRR4ZXpM5VGf99JuHfyItXFjjiOn5fhJaqAmdxb4bVRcjA8JJzNLyN63vQqS7s2PwJeMwrVPywL0Ze_nA_Yzl7h07wpZFm_mU9_-wI-YBk-JxCtGsMJ3EH6T2s721tl6cAV7p66KY3Kxi0V9X4y6CB80DuX8am1Kt1Cm7stgGesCgQ_Ia-jnMG6fh6l_DkMnVE3aEYf0_sGFAXjEsG6HQyNRuW5kMWnHpQCoyq7tp9KB18V0NjA5wjupt_HDkSpvR_Y6XwABQHLm3E5n7_lQ327hV2zqC9UpRHHwJANumXwp7P41mckV2IeMhrv1CGeCK_a7ezm9GP_xGVkeF08Lq6FnE5CRpk2sf26a9d8OI2mF_nU3tgeUBqtN51pWFzUy8pmR6MygegpQcgcuABAgZ_0psaq4MTqSReMtUQhjBD2oI_2grLz4SGTnAjzxSUHeIIoTirutzg1i8dwPmHVbj08bS9Ib_whzBhLcWzC3Kf6VyaICMGMYqAiqJQlftOaR0k22Eknnj8riy9u8yW1qFUZBqopt4sv5mmQWMT4qoaBfIXijkPHzitn2hdDgebmEP0yD26t9KtuWjSh7sPRfHZ4kVhqW8DuYaTFaAFNcawI6MtAO2XvgVSMsUpXyRyz720YpBcu5KYqrBoUF8cZeOY6PDh-rN2aWUaL_146e2sdNx-2D7ZCIeghsw9o-qC7aqEDcP12sk6TqwDLuJ9lMCOUCAa2b7Fu0J6TvC4LCb6TsT0dTLi18YJIUogNVyDm04ANl-96-B95x12TZfkfPHZc6eShhgYNdcuvkJfpEjmtt_MSpNnObIgYVmsXGlYOfqpmKSjVX_XyDrmsuICbexXLXOROosXH7JWVixaapAIQWVP76urKVRNn6W2lhV5DSgnWa4eJHymoJJVWixIst2fKs1eWwuWCOZI7QzAC1Ks0ZkNvyITv8dGmhZj9fbPkqjjGCG5LXcosj2rhJNCmoqdP3e54BJ3XmG_6TZjOYmAzn7ZMLrs3SwxcxxoeaAWoFLxSED6K7xS6iMcEit6sc0cpsybn98C_F8F0qR72B2oKZDXo_GAOMlpTXQEJlNV-1ZycwBAal7LfmLdpACA5u87sOGOEz95xcsFBbcJ3ON7K6z6PGkVZMfndYZHOunT5J4hEaiaK-Gm6G-TNzS0sNBN-644PmZu1lUDkRRY6w4-rBbJ7pr2wFcX_rFr8-7A-1cgY9BuKn2l4NLLtO1OF_vL6Rn3UpDrw6AR-zugf0jOt3R6G_EXGGIOX7zYRnBqoODAmtMINBR9l72SOGyqp3KME9gWG9zCglTGYcupg6zZSzhF0c2Tyy8dfK-LFyXokomxCyuBtDvS-rYBKGtWsXU"
+    },
+    {
+      "name": "Untergrenze der Iterationen",
+      "passphrase": "pcpx-test-vector-1",
+      "saltB64u": "AAECAwQFBgcICQoLDA0ODw",
+      "iterations": 180000,
+      "derivedKeyB64u": "CA8oZzAP1ZX3XxC2_NkDnu24TYwHv8Moebl-tdPxoFI",
+      "payloadSize": 64,
+      "totalChunks": 1,
+      "ivsB64u": [
+        "VVVVVVVVVVVVVVVV"
+      ],
+      "containerSize": 264,
+      "containerSha256B64u": "ICaTYO6Dn4brBN-Z6gefqfS6UJLXimNxrPxWqIWJDTE",
+      "plaintextB64u": "ByZFZIOiweD_Hj1ce5q52PcWNVRzkrHQ7w4tTGuKqcjnBiVEY4KhwN_-HTxbepm41_YVNFNykbDP7g0sS2qJqA",
+      "containerB64u": "UENQWDEtRU5DLXYyCgAAAJd7InZlcnNpb24iOjIsImFsZyI6IkFFUy1HQ00iLCJrZGYiOiJQQktERjItU0hBMjU2IiwiaXRlcmF0aW9ucyI6MTgwMDAwLCJjaHVua1NpemUiOjUyNDI4ODAsInBheWxvYWRTaXplIjo2NCwidG90YWxDaHVua3MiOjEsImFhZCI6IlBDUFgxLUNIVU5LLUFBRC12MSJ9AAAAUFVVVVVVVVVVVVVVVTEI8vZNfKPDYoFFxUjXrWW-zIKHRSDWPYYlirQsZz89-k079kBAQj2z79F-gW2X3FIqmpNr0pj_uW4IzwH1WfhgGvMlVXr8zmJgue58vttL"
+    },
+    {
+      "name": "genau ein voller Chunk",
+      "passphrase": "pcpx-test-vector-1",
+      "saltB64u": "AAECAwQFBgcICQoLDA0ODw",
+      "iterations": 600000,
+      "derivedKeyB64u": "MH5ugvkxRnbKoRsTpWoEGhAxcv4OmVEKF4xMF7VeOAg",
+      "payloadSize": 5242880,
+      "totalChunks": 1,
+      "ivsB64u": [
+        "ZmZmZmZmZmZmZmZm"
+      ],
+      "containerSize": 5243085,
+      "containerSha256B64u": "Dxq013G6_ZfUjMbNznjR09ZH7J-tVx1lgOC0E4CYBN4",
+      "plaintextRule": "byte[i] = (i * 31 + 7) mod 256",
+      "plaintextSha256B64u": "8nk73KyyF1NIOse9fmtuiazsyBfIGqhKci7xVixQgkw"
+    },
+    {
+      "name": "zwei Chunks — zweiter angebrochen",
+      "passphrase": "pcpx-test-vector-1",
+      "saltB64u": "AAECAwQFBgcICQoLDA0ODw",
+      "iterations": 600000,
+      "derivedKeyB64u": "MH5ugvkxRnbKoRsTpWoEGhAxcv4OmVEKF4xMF7VeOAg",
+      "payloadSize": 5242897,
+      "totalChunks": 2,
+      "ivsB64u": [
+        "d3d3d3d3d3d3d3d3",
+        "iIiIiIiIiIiIiIiI"
+      ],
+      "containerSize": 5243134,
+      "containerSha256B64u": "AinAIxDGHnQKqdxzPDTpa_sLSgO7rcXqJJBgiVs2KF4",
+      "plaintextRule": "byte[i] = (i * 31 + 7) mod 256",
+      "plaintextSha256B64u": "hb24nU1EZOQ41DFIrNq-x57lNIovlQbbOM_A_YSjuD4"
+    }
+  ]
+}

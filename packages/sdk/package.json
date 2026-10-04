@@ -1,0 +1,51 @@
+{
+  "name": "@pcpx/sdk",
+  "version": "0.1.0",
+  "description": "Zero-Knowledge-Krypto und Link-Format von pcpx.one. Browser, Web Worker und Node 20+.",
+  "keywords": [
+    "encryption",
+    "aes-gcm",
+    "zero-knowledge",
+    "end-to-end-encryption",
+    "pbkdf2",
+    "webcrypto",
+    "pcpx"
+  ],
+  "author": "PCPX1 <security@pcpx.one>",
+  "license": "MIT",
+  "homepage": "https://pcpx.one/developers",
+  "bugs": {
+    "email": "security@pcpx.one",
+    "url": "https://pcpx.one/security"
+  },
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "src",
+    "vectors",
+    "SPEC.md",
+    "README.md",
+    "LICENSE"
+  ],
+  "sideEffects": false,
+  "engines": {
+    "node": ">=20"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "prepublishOnly": "npm run build && npm test",
+    "build": "tsc -p tsconfig.build.json && node scripts/build.mjs",
+    "test": "node --import tsx tests/sdk.test.mts"
+  },
+  "dependencies": {}
+}
